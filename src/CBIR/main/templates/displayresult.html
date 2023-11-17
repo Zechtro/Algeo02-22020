@@ -1,0 +1,156 @@
+{% extends "base.html" %} 
+
+{% block head %}
+
+{% load static %}
+<link rel="stylesheet" href={% static "css/displayresult.css" %}>
+{% endblock head %}
+
+{% block content %}
+<section>
+    <div class="content">
+        
+        <div class="subtitle">
+            <div class="filler-title">
+                <div>
+                    <a class="link-home" href='main'>Main Menu</a>
+                </div>
+            </div>
+
+            <div class="main-title">
+                <h1>SEARCH!</h1>
+            </div>
+
+            <div class="filler-title">
+    
+            </div>
+        </div>
+        
+
+        <div class="wrapper">
+
+            <section>
+                <div class="search-section">
+                    <div class="display-input">
+                        <div class="ur-image">
+                            <h3>Your Image</h3>
+                        </div>
+                        <div class="input-image">
+                            {% for img in inputimage %}
+                                <img src="{{ img.image.url }}">
+                            {% endfor %}
+                        </div>
+                    </div>
+                    
+                    <div class="fitur">
+
+                        <div>
+                            <a href="{% url 'change-image' %}">Change Image</a>
+                        </div>
+
+                        <div>
+                            <a href="{% url 'change-dataset' %}">Change Dataset</a>
+                        </div>
+
+                        <div>
+                            <div class="input">
+                                <form method="POST" required="True" enctype="multipart/form-data">
+                                    {% csrf_token %}
+
+                                    <section class="toggle-section">
+                                        <div class="toggle-choice color">
+                                            <h3>COLOR</h3>
+                                        </div>
+
+                                        <div class="toggle-button">
+                                            <label for="toggle">
+                                                <input class="input" id="toggle" name="toggle-checkbox" type="checkbox" value="tekstur"
+                                                {% if isTekstur %}
+                                                    checked
+                                                {% endif %}/>
+                                                <div class="toggle-wrapper">
+                                                        <span class="selector">
+                                                        </span>
+                                                </div>
+                                            </label>   
+                                        </div>
+                                        
+                                        <div class="toggle-choice texture">
+                                            <h3>TEXTURE</h3>
+                                        </div>
+
+                                    </section>
+
+                                    <div>
+                                        <input type="submit" method="POST"
+                                        value="SEARCH!" onclick="location.href='#result';">
+                                    </div>
+                                </form>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="result">
+                <div class="result-section">
+                    <div class="result-title">
+                        <div class="filler-title">
+        
+                        </div>
+            
+                        <div class="main-title">
+                            <h1>RESULT</h1>
+                        </div>
+            
+                        <div class="filler-title info-time">
+                            <p class="text-time">{{countSimilarity}} result(s) in {{search_time}} second(s)</p>
+                        </div>
+                    </div>
+
+                    <div class="display-result">
+                        {% for img in page.object_list %}
+                        {% if img.similarity > 60 %}
+                            <div class="container">
+                                <img src="{{ img.image.url }}">
+                                <p>Similarity : {{img.similarity}} %</p>
+                            </div>
+                        {% endif %}
+                        {% endfor %}
+                    </div>
+
+                    <div class="pagination">
+
+                        <div>
+                            {% if  page.has_previous%}
+                                <div>
+                                    <a class="page-link" href="{% url 'display-result' %}?page={{page.previous_page_number}}#result"><</a>
+                                </div>
+                            {% else %}
+                                <div class="filler"></div>
+                            {% endif %}
+                        </div>
+
+                        <div>
+                            <p class="page-counter">{{page.number}} / {{page.paginator.num_pages}}</p>
+                        </div>
+
+                        <div>
+                            {% if  page.has_next %}
+                                <div>
+                                    <a class="page-link" href="{% url 'display-result' %}?page={{page.next_page_number}}#result">></a>
+                                </div>
+                            {% else %}
+                                <div class="filler"></div>
+                            {% endif %}
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+</section>
+{% endblock content %}

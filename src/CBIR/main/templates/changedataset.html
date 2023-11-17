@@ -1,0 +1,57 @@
+{% extends "base.html" %} 
+{% load widget_tweaks %}
+
+{% block head %}
+
+{% load static %}
+<link rel="stylesheet" href={% static "css/changedataset.css" %}>
+{% endblock head %}
+
+{% block content %}
+<div class="content">
+    <section>
+        <div class="subtitle">
+            <h1>CHANGE DATASET</h1>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="link" id="link-back" title="Upload Image">
+                {% comment %} <a href="{% url 'step1' %}"><</a> {% endcomment %}
+            </div>
+
+            <div class="upload">
+                <div class="display-dataset">
+                    {% for img in dataset %}
+                    <div class="image">
+                        <img src="{{ img.image.url }}">
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <div>
+                    <form method="POST" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-dataset">
+                            <input type="file" name="dataset" multiple>
+                        </div>
+                        <div>
+                            <input type="submit"
+                            value="Submit">
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="link" title="Search Image">
+            {% if dataset.count == 0 %}
+                <div id="not-upload">></div>
+            {% else %}
+                <a href="{% url 'display-result' %}?page=1">></a>
+            {% endif %}
+            </div>
+
+        </div>
+    </section>
+</div>
+{% endblock content %}

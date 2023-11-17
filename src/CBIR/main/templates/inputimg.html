@@ -1,0 +1,69 @@
+{% extends "base.html" %} 
+{% load widget_tweaks %}
+
+{% block head %}
+
+{% load static %}
+<link rel="stylesheet" href={% static "css/inputimg.css" %}>
+{% endblock head %}
+
+{% block content %}
+<div class="content">
+    <section>
+        <div class="subtitle">
+            <h1>UPLOAD IMAGE</h1>
+        </div>
+
+        <div class="wrapper">
+
+            <div class="link" id="link-back" title="Home">
+                <a href="{% url 'main' %}"><</a>
+            </div>
+
+            <div class="display">
+                <div class="image">
+                    {% if inputimage.count != 0 %}
+                        
+                    {% else %}
+                    <div class="ur-image">
+                        <h3>Image</h3>
+                    </div>
+                    {% endif %}
+
+                    {% for img in inputimage %}
+                    <div>
+                        <img src="{{ img.image.url }}">
+                    </div>
+                    {% endfor %}
+                </div>
+                
+                <div>
+                    <form method="POST" required="True" enctype="multipart/form-data">
+                        <div class="input">
+                            <div class="form-input">
+                                {% csrf_token %}
+                                <input type="hidden" name="form_type" value="formInput">
+                                {{ form.image }}
+                            </div>
+                            
+                            <div>
+                                <input type="submit"
+                                value="Submit">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="link" title="Upload Dataset">
+                {% if inputimage.count == 0 %}
+                    <div id="not-upload">></div>
+                {% else %}
+                    <a href="{% url 'step2' %}">></a>
+                {% endif %}
+            </div>
+    
+        </div>
+    </section>
+</div>
+{% endblock content %}

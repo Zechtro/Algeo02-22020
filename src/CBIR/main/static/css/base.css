@@ -1,0 +1,16 @@
+body {
+    font-family: 'Roboto';
+    font-size: 22px;
+    background-color: #9AC5F4;
+    color: #FFEEBB;
+}
+
+html {
+    overflow-x:hidden;
+}
+
+h1 {
+    font-size:3.5rem;
+    margin-bottom:30px;
+    margin-top:20px;
+  }
