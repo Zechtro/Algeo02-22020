@@ -71,6 +71,7 @@ h1 {
 
 .link-home {
   display:flex;
+  justify-content:center;
   align-items:center;
   width:7vw;
   height:6vh;
