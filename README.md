@@ -66,24 +66,29 @@ Untuk memulai program, perlu dilakukan beberapa instalasi dan set up:
     
 2. Intall Django
 
-`pip install Django`
+    `pip install Django`
+
 3. Install Numpy
 
-`pip install numpy`
+    `pip install numpy`
+
 4. Install Pillow
 
-`pip install Pillow`
+    `pip install Pillow`
+
 5. Install Widget Tweaks
 
-`pip install django-widget-tweaks`
+    `pip install django-widget-tweaks`
+
 6. Install Whitenoise
 
-`pip install whitenoise`
+    `pip install whitenoise`
+
 7. RUN SERVER
 
-In **src/CBIR/** directory
+    In **src/CBIR/** directory
 
-`python manage.py runserver`
+    `python manage.py runserver`
 
 
 ## Usage
