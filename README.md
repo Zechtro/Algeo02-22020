@@ -51,9 +51,8 @@
 
 
 ## Setup
-What are the project requirements/dependencies? Where are they listed? A requirements.txt or a Pipfile.lock file perhaps? Where is it located?
-
-Proceed to describe how to install / setup one's local environment / get started with the project.
+Untuk memulai program, perlu dilakukan beberapa instalasi dan set up:
+1. Activate Virtual Environment
 
 
 ## Usage
