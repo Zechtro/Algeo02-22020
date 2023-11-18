@@ -94,10 +94,12 @@ Untuk memulai program, perlu dilakukan beberapa instalasi dan set up:
 
 
 ## Usage
-How does one go about using it?
-Provide various use cases and code examples here.
-
-`write-your-code-here`
+1. Pada Homepage, tekan tombol **START**
+2. Kemudian masukkan gambar masukan yang ingin dilakukan pencarian, setelah itu tekan tombol tanda panah yang berada pada bagian kanan
+3. Setelah itu masukkan kumpulan gambar yang akan dijadikan dataset, setelah itu tekan tombol tanda panah yang berada pada bagian kanan
+4. Pilih parameter yang ingin digunakan (warna/tekstur), kemudian tekan tombol **SEARCH!** untuk memulai pencarian
+5. Tunggu hingga hasil keluar
+6. Tekan tombol **Change Image** untuk mengganti gambar masukan dan tombol **Change Dataset** untuk mengganti dataset
 
 
 ## Project Status
