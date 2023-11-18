@@ -59,9 +59,11 @@ Untuk memulai program, perlu dilakukan beberapa instalasi dan set up:
     In **src** directory
 
     Windows:
+
     `algeo02\Scripts\activate.bat`
 
     Unix/MacOS:
+
     `source algeo02/Scripts/activate`
     
 2. Intall Django
@@ -103,7 +105,6 @@ Project is: _complete_.
 
 
 ## Room for Improvement
-Room for improvement:
 - Dapat ditambahkan loading screen ketika sedang dilakukan pemrosesan gambar dataset.
 
 
@@ -113,5 +114,5 @@ Room for improvement:
 
 ## Contact
 - Aurelius Justin Philo Fanjaya - 13522020@std.stei.itb.ac.id
-- Fedrianz Dharma - 13522090@std.stei.itb.ac.id
-- Steven Tjhia - 13522103@std.stei.itb.ac.id
+- Fedrianz Dharma               - 13522090@std.stei.itb.ac.id
+- Steven Tjhia                  - 13522103@std.stei.itb.ac.id
