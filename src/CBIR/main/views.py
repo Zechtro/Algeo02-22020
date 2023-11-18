@@ -50,7 +50,7 @@ def upload_form_dataset(request):
         
         start_uploadFILES = time.time()
         for img in dataset:
-            if str(img).lower().endswith(('.png', '.jpg', '.jpeg', '.webp')):
+            if str(img).lower().endswith(('.png', '.jpg', '.jpeg', '.webp', '.ppm', '.gif', '.tiff', '.bmp')):
                 ImageDataset.objects.create(image=img)
         end_uploadFILES = time.time()
         print("Upload files:", end_uploadFILES-start_uploadFILES)

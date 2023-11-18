@@ -34,17 +34,4 @@ def texture(img_path):
 
 def cosine_similiarity(V1, V2):
     return np.dot(V1, V2)/(norm(V1)*norm(V2))
-# def main():
-#     path1 = 'putih2_0.png'
-#     path2 = 'apel_0.jpg'
-#     V1 = texture(path1)
-#     print(V1)
-#     V2 = texture(path2)
-#     print(V2)
-#     print("%.10f" % cosine_similiarity(V1,V2))
-
-# start = time.time()
-# main()
-# end = time.time()
-# print("time:", end - start)
 
