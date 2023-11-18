@@ -1,6 +1,6 @@
 # Algeo02-22020
-> Outline a brief description of your project.
-> Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
+> Tugas Besar 2 IF2123 Aljabar Linier dan Geometri 
+> Aplikasi Aljabar Vektor dalam Sistem Temu Balik Gambar Semester I Tahun 2023/2024
 
 ## Table of Contents
 * [General Info](#general-information)
@@ -13,28 +13,36 @@
 * [Room for Improvement](#room-for-improvement)
 * [Acknowledgements](#acknowledgements)
 * [Contact](#contact)
-<!-- * [License](#license) -->
 
 
 ## General Information
-- Provide general information about your project here.
-- What problem does it (intend to) solve?
-- What is the purpose of your project?
-- Why did you undertake it?
-<!-- You don't have to answer all the questions - just the ones relevant to your project. -->
+- Asisten Tubes : Leon
+- Nama Kelompok : Penduduk GAIB
+- Kontributor:
+    - Aurelius Justin Philo Fanjaya (13522020)
+    - Fedrianz Dharma (13522090)
+    - Steven Tjhia (13522103)
+- Project ini dilakukan untuk memenuhi tugas besar mata kuliah IF2123 Aljabar Linier dan Geometri
+- Project ini merupakan sistem temu balik gambar (CBIR) dengan parameter warna dan tekstur
 
 
 ## Technologies Used
-- Tech 1 - version 1.0
-- Tech 2 - version 2.0
-- Tech 3 - version 3.0
+- Django - version 4.2.7
+- Python - version 3.11.0
+- numpy - version 1.23.4
+- Pillow - version 9.3.0
+- HTML (vanilla)
+- CSS (vanilla)
+- SQLite3
 
 
 ## Features
-List the ready features here:
-- Awesome feature 1
-- Awesome feature 2
-- Awesome feature 3
+- Upload Image
+- Upload Dataset
+- Search Image by Color
+- Search Image by Texture
+- Change Image
+- Change Dataset
 
 
 ## Screenshots
@@ -56,34 +64,19 @@ Provide various use cases and code examples here.
 
 
 ## Project Status
-Project is: _in progress_ / _complete_ / _no longer being worked on_. If you are no longer working on it, provide reasons why.
+Project is: _complete_.
 
 
 ## Room for Improvement
-Include areas you believe need improvement / could be improved. Also add TODOs for future development.
-
 Room for improvement:
-- Improvement to be done 1
-- Improvement to be done 2
-
-To do:
-- Feature to be added 1
-- Feature to be added 2
+- Dapat ditambahkan loading screen ketika sedang dilakukan pemrosesan gambar dataset.
 
 
 ## Acknowledgements
-Give credit here.
-- This project was inspired by...
-- This project was based on [this tutorial](https://www.example.com).
-- Many thanks to...
+- Many thanks to Kak Leon as asisten tubes
 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
-
-
-<!-- Optional -->
-<!-- ## License -->
-<!-- This project is open source and available under the [... License](). -->
-
-<!-- You don't have to include all sections - just the one's relevant to your project -->
+- Aurelius Justin Philo Fanjaya - 13522020@std.stei.itb.ac.id
+- Fedrianz Dharma - 13522090@std.stei.itb.ac.id
+- Steven Tjhia - 13522103@std.stei.itb.ac.id
