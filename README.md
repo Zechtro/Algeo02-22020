@@ -55,13 +55,15 @@
 ## Setup
 Untuk memulai program, perlu dilakukan beberapa instalasi dan set up:
 1. Activate Virtual Environment
->In **src** directory
->Windows:
->`algeo02\Scripts\activate.bat`
->Unix/MacOS:
->`source algeo02/Scripts/activate`
+    In **src** directory
+    Windows:
+    `algeo02\Scripts\activate.bat`
+    Unix/MacOS:
+    `source algeo02/Scripts/activate`
+    
 2. Intall Django
 `pip install Django`
+
 3. Install Numpy
 `pip install numpy`
 
