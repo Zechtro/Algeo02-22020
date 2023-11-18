@@ -59,33 +59,33 @@ Untuk memulai program, perlu dilakukan beberapa instalasi dan set up:
     In **src** directory
 
     Windows:
-
     `algeo02\Scripts\activate.bat`
 
     Unix/MacOS:
-
     `source algeo02/Scripts/activate`
     
 2. Intall Django
+
 `pip install Django`
-
 3. Install Numpy
+
 `pip install numpy`
-
 4. Install Pillow
+
 `pip install Pillow`
-
 5. Install Widget Tweaks
+
 `pip install django-widget-tweaks`
-
 6. Install Whitenoise
-`pip install whitenoise`
 
+`pip install whitenoise`
 7. RUN SERVER
-```
+
 In **src/CBIR/** directory
+
 `python manage.py runserver`
-```
+
+
 ## Usage
 How does one go about using it?
 Provide various use cases and code examples here.
