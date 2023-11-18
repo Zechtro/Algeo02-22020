@@ -46,15 +46,47 @@
 
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Example screenshot](./img/Test%20ITB%20Color.png)
+![Example screenshot](./img/Test%20ITB%20Texture%20page%201.png)
+![Example screenshot](./img/Test%20ITB%20Texture%20page%202.png)
+![Example screenshot](./img/Test%20Labtek%20Biru%20Color%20dataset.png)
+![Example screenshot](./img/Test%20Singa%20Color%20dataset%201.png)
+![Example screenshot](./img/Test%20Singa%20Texture%20dataset%201.png)
 <!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
 Untuk memulai program, perlu dilakukan beberapa instalasi dan set up:
 1. Activate Virtual Environment
+```
+    In **src** directory
+    ```
+    Windows:
+    `algeo02\Scripts\activate.bat`
+    Unix/MacOS:
+    `source algeo02/Scripts/activate`
+    ```
+```
+2. Intall Django
+`pip install Django`
 
+3. Install Numpy
+`pip install numpy`
 
+4. Install Pillow
+`pip install Pillow`
+
+5. Install Widget Tweaks
+`pip install django-widget-tweaks`
+
+6. Install Whitenoise
+`pip install whitenoise`
+
+7. RUN SERVER
+```
+In **src/CBIR/** directory
+`python manage.py runserver`
+```
 ## Usage
 How does one go about using it?
 Provide various use cases and code examples here.
