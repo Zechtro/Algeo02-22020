@@ -1,5 +1,6 @@
 # Algeo02-22020
 > Tugas Besar 2 IF2123 Aljabar Linier dan Geometri 
+
 > Aplikasi Aljabar Vektor dalam Sistem Temu Balik Gambar Semester I Tahun 2023/2024
 
 ## Table of Contents
@@ -20,8 +21,8 @@
 - Nama Kelompok : Penduduk GAIB
 - Kontributor:
     - Aurelius Justin Philo Fanjaya (13522020)
-    - Fedrianz Dharma (13522090)
-    - Steven Tjhia (13522103)
+    - Fedrianz Dharma               (13522090)
+    - Steven Tjhia                  (13522103)
 - Project ini dilakukan untuk memenuhi tugas besar mata kuliah IF2123 Aljabar Linier dan Geometri
 - Project ini merupakan sistem temu balik gambar (CBIR) dengan parameter warna dan tekstur
 
@@ -49,28 +50,18 @@
 ![Example screenshot](./img/Test%20ITB%20Color.png)
 
 ![Example screenshot](./img/Test%20ITB%20Texture%20page%201.png)
-![Example screenshot](./img/Test%20ITB%20Texture%20page%202.png)
-![Example screenshot](./img/Test%20Labtek%20Biru%20Color%20dataset.png)
-![Example screenshot](./img/Test%20Singa%20Color%20dataset%201.png)
-![Example screenshot](./img/Test%20Singa%20Texture%20dataset%201.png)
-<!-- If you have screenshots you'd like to share, include them here. -->
 
 
 ## Setup
 Untuk memulai program, perlu dilakukan beberapa instalasi dan set up:
 1. Activate Virtual Environment
-```
-    In **src** directory
-    ```
-    Windows:
-    `algeo02\Scripts\activate.bat`
-    Unix/MacOS:
-    `source algeo02/Scripts/activate`
-    ```
-```
+>In **src** directory
+>Windows:
+>`algeo02\Scripts\activate.bat`
+>Unix/MacOS:
+>`source algeo02/Scripts/activate`
 2. Intall Django
 `pip install Django`
-
 3. Install Numpy
 `pip install numpy`
 
