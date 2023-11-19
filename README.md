@@ -91,6 +91,8 @@ Untuk memulai program, perlu dilakukan beberapa instalasi dan set up:
     >In **src/CBIR/** directory
     >
     >`python manage.py runserver`
+    >
+    >Go to the address where the server is running
 
 
 ## Usage
