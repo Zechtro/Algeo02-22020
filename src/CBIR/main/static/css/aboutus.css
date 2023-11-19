@@ -1,0 +1,113 @@
+h1 {
+    font-size:3.5rem;
+    margin-bottom:30px;
+    margin-top:20px;
+  }
+
+  .wrapper{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    margin-left:10vw;
+  }
+
+
+  .subtitle {
+    display:flex;
+    justify-content:center;
+    flex-wrap:nowrap;
+    width:100vw;
+  }
+  
+  .main-title {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:30vw;
+  }
+  
+  .link-home {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:7vw;
+    height:6vh;
+    font-size:1rem;
+    background-color:#474973;
+  }
+  
+  .link-home:hover {
+    background-color:#a69cac;
+  }
+  
+  .filler-title {
+    display:flex;
+    justify-content:start;
+    width:35vw;
+  }
+
+.steps{
+    display:flex;
+    justify-content:center;
+}
+
+a {
+    /* margin-top:40px; */
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #687EFF  ;
+    border-radius: 100px;
+    border-style: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-weight: 500;
+    font-size:2rem;
+    height:80px;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    /* overflow: hidden; */
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  a:hover {
+    background-color: #8696FE;
+    box-shadow: rgba(0, 0, 0, .05) 0 5px 30px, rgba(0, 0, 0, .05) 0 1px 4px;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+  }
+  
+  a:hover:after {
+    opacity: .5;
+  }
+  
+  a:active {
+    box-shadow: rgba(0, 0, 0, .1) 0 3px 6px 0, rgba(0, 0, 0, .1) 0 0 10px 0, rgba(0, 0, 0, .1) 0 1px 4px -1px;
+    transform: translateY(2px);
+    transition-duration: .35s;
+  }
+  
+  a:active:after {
+    opacity: 1;
+  }
+  
+  @media (min-width: 768px) {
+    a {
+      padding: 14px 14px;
+      width: 300px;
+    }
+  }

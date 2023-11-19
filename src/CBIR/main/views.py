@@ -208,3 +208,15 @@ def change_dataset(request):
     dataset = ImageDataset.objects.all()
     context = {'dataset': dataset,}
     return render(request, 'changedataset.html',context)
+
+def how_to_use(request):
+    context = {}
+    return render(request,'howtouse.html',context)
+
+def learn_more(request):
+    context = {}
+    return render(request,'learnmore.html',context)
+
+def about_us(request):
+    context = {}
+    return render(request,'aboutus.html',context)

@@ -8,7 +8,7 @@ urlpatterns = [
     path('searchimage/', views.display_result, name='display-result'),
     path('changeimage/', views.change_image, name='change-image'),
     path('changedataset/', views.change_dataset, name='change-dataset'),
-    path('how-to-use/', views.display_result, name='howtouse'),
-    path('learn-more/', views.display_result, name='learnmore'),
-    path('about-us/', views.display_result, name='aboutus'),
+    path('how-to-use/', views.how_to_use, name='howtouse'),
+    path('learn-more/', views.learn_more, name='learnmore'),
+    path('about-us/', views.about_us, name='aboutus'),
 ]
