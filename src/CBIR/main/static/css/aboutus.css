@@ -6,9 +6,12 @@ h1 {
 
   .wrapper{
     display:flex;
-    flex-direction:column;
-    justify-content:center;
-    margin-left:10vw;
+    /* flex-direction:column; */
+    justify-content:space-evenly;
+    align-items:center;
+    margin-left:5vw;
+    margin-right:5vw;
+    margin-top:50px;
   }
 
 
@@ -49,6 +52,13 @@ h1 {
 .steps{
     display:flex;
     justify-content:center;
+}
+
+img{
+  max-width:250px;
+  max-height:250px;
+  border-style:solid;
+  border-radius:15px;
 }
 
 a {

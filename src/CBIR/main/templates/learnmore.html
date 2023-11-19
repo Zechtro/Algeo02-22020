@@ -16,7 +16,7 @@
             </div>
 
             <div class="main-title">
-                <h1>CBIR Concepts</h1>
+                <h1>Search Engine Concept</h1>
             </div>
 
             <div class="filler-title">
@@ -29,10 +29,17 @@
 
             <section>
                 <div class="steps">
-                    <p>1. Pada halaman menu utama, tekan tombol <b>START!</b><br>
-                    2. Upload gambar yang ingin dibandingan dengan dataset<br>
-                    3. Upload kumpulan gambar yang ingin dijadikan sebagai dataset<br>
-                    4. Lakukan pencarian dengan parameter warna atau tekstur</p>
+                    <h2>Database</h2>
+                    <p>Gambar yang di-upload akan dimasukkan ke dalam database terlebih dahulu.
+                        Database untuk gambar yang ingin dilakukan pencarian berbeda dengan database 
+                        untuk dataset.Database untuk gambar masukan memiliki field <b>image</b> (nama file gambar), <b>result</b> (jumlah gambar pada dataset yang memiliki kemiripan lebih besar dari 60% terhadap gambar masukan), dan <b>search_time</b> (waktu proses perhitungan tingkat kemiripan). 
+                        Sedangkan database untuk dataset memiliki field <b>image (nama file gambar)</b> dan <b>similarity</b> (tingkat kemiripan dengan gambar masukan dengan skala 0-100).</p>
+                    <h2>Request-Response</h2>
+                    <p>Gambar yang telah diupload kemudian dimasukkan ke dalam database dengan nilai pada atribut <b>image</b> adalah 
+                        nama file gambar tersebut. Sedangkan atribut gambar masukan lainnya dimasukkan dengan nilai default yaitu nol. 
+                        Untuk atribut gambar dataset <b>similarity</b> dibiarkan bernilai <b>NULL</b> terlebih dahulu. 
+                        Nilai <b>similarity</b> tersebut kemudian akan diperbarui ketika proses perhitungan dijalankan. Setelah didapatkan seluruh tingkat kemiripan dataset terhadap gambar masukan, 
+                        kemudian gambar pada dataset yang memiliki tingkat kemiripan lebih dari 60% akan ditampilkan pada website. </p>
                 </div>
             </section>
 
