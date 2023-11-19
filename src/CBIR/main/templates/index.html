@@ -7,23 +7,26 @@
 {% endblock head %}
 {% block content %}
 <div>
-   <div>
-      <h1>
-         Learn More
-      </h1>
+   <div class="title">
+      <h1>Content-Based Image Retrieval</h1>
    </div>
+   <nav>
+      <div>
+         <a href="{% url 'howtouse' %}">How To Use</a>
+      </div>
 
-   <div>
-      <h1>
-         How to Use
-      </h1>
-   </div>
+      <div>
+         <a class="start" href="{% url 'step1' %}">START!</a>
+     </div>
 
-   <div>
-      <h1>
-         About Us
-      </h1>
-   </div>
+      <div>
+         <a href="{% url 'learnmore' %}">Learn More</a>
+      </div>
+
+      <div>
+         <a href="{% url 'aboutus' %}">About Us</a>
+     </div>
+   </nav>
 
 </div>
 {% endblock content %}
