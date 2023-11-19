@@ -47,9 +47,9 @@
 
 
 ## Screenshots
-![Example screenshot](./img/Test%20ITB%20Color.png)
+![Example screenshot](./img/1.png)
 
-![Example screenshot](./img/Test%20ITB%20Texture%20page%201.png)
+![Example screenshot](./img/2.png)
 
 
 ## Setup
